@@ -1,0 +1,50 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	margin-top:65px;
+	background:#a5a6b3 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAKlBMVEUAAACkprScnqysqryUlqSkpqyUmqSkoqycmqSkqrScnqSsqrScoqyUlpwK4qjIAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAABD1JREFUOI0Fwc9T01gAAOD3L7xYyGsfHFKQBNKLM87AjO6hLGML5YKDdgQ9OKtDFS8vsib9sYcXC3lNyqGO2qLsIQyziZY9JNZNoOwhuLvtWPcge6ij/jH7fWB2vYJnxMHIHKpHu+phn7bJ2xIvERCq/nS32rXKlhck8wbcaFvnq3x3G1heultovbDnD2vEulPzm14Owb4yC8KBUuaTlHJcuWQNDNYfxz8/3uApoJKcftLiadWKJdXKN56wxGx30r0EGI81iZIlgZPDMEzencee3bDeOUCf8HOcZYRznrku/8sr/KiRnNoddsEyg1xiQ4EzpOFGFnSpj+tHLvsCfnNDXiHZ8JeFzfTtP00+qOTih+knHNhdxMe8F39ussg17sGEBPtB31/aAolHO5/2ZTtrygvcbcRw5TILU5L3HbSvOGVRrDFMd5DAYrOryY8NpGXbwIkXz0v6ivZVvei8yeUKiziGV3nRAIuKMXHGpm2Kntct4yW0Jicim3h5UI95lMqV/sOtHo+LavNdIZbr7Bd6AN6tTRam2p64o1cfLrcN5ea1/mFP44Ej/Pqj9fozRAnslMnfU9EKZyS+3bGAJMlHRnWLntiNSnX0hrqZ0S+4Cv8OUB4RDWYGeaKloVN7W7DEQcnSn4LY2vkncXpbqx+V0mXKSQZsJlwzZKCd+D1BFmjuPBjTJ9vsrGfMt3LEeAlUg+LomZ40OcE0GD1gi4j94WMEHJWV2io7/a8hOePCCpWC9R7MsB1QL8WN7ODurHo1qvciQW1EQW9PJyKo7SNE2YcRRrq39FeaFJ4p+sn3dQM0M0X8hIdYKtDYALXH+14jw7kPXGD5nr5tI6ulBo8nu1Exg8q6R7oM1A3b7oQ4ghKfRGSUwFLFNMbFKvjK3mclEscXSvUX7RrvxJComCnyDFwvn9GMv81PyKLsL0CxOkPSnvSiBaSnjYNMV6HwOykwS98o41WKw/wQPEsHxtqqjd/yJWVBiH1Wi7jp7+f+AsPp+hta7/PX1oYazE/CwSWZZT1MAPpklHwukn1dMdnSF/068mLtjTQGNz1d2LPN8tgcolp6x5dGpqIsR6+AloxSeiLZS8nifOpIkqihdhWlT4Dp1jgrpW6WioJC55xxmEtFAaQIYIMZe8pW2YGnrzk3vBHE4Bnh5jrAYqk9S/0YCGM1WkQn/GrxwPGvvhJATAvN/jJzHzQ+IDSCBwfSVtBh6Bj478s3Ldo66fRr1ab26F7wAK7JcFkE6DRRHVTCWMbbs5ho0FHLbvW2mgwcD++J7fuXuDlDfrwzJh27B/Hglo0x+Al1BO/QvDAt3r7fNLzWsleIT6lyFcw6H4Rd3uWHblANhOz93qu0d/DcTYLj/EkE4Q/+5VIIu6qg6TghSBxsgNg/K1oH9ctD0mnPnF4M5IovYArzoEiL88x2gj4/TXDGPiQlsrWE0/X/AZB/7N0wvmsAAAAAAElFTkSuQmCC);
+	
+	//background-color: #878c00;
+	//background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+	//background-image : url('/public/45-degree-fabric-dark.png');
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
