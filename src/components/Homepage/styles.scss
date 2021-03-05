@@ -19,7 +19,7 @@
         justify-content: center;
         flex-wrap: wrap;
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         padding-top:55px ;
         &--git{
             display: flex;
@@ -57,6 +57,7 @@
                 justify-content: center;
                 padding-left: 1em;
                 padding-top: 55px;
+                padding-bottom: 4em;
                 min-height: 100vh;
                 background:#17182bbd url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAGFBMVEUAAAAsLlQkKkwsMlQsKkw0MlQsLkwkJkwN2GXAAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA1pJREFUOI0Nk8l6tCoARHkFBnHNIP8aQXvNZNYObdaIknUnJvf1bz9BVX3nFHgJ4Ysx3KoTKpO5h/OppSRA4ZEU8dPkPjF6UswQZfzpFsAdHPM/dHmjrgGrI5ItsLlNQGnGZlaM9CvlpF8MKuk71BUsryFTPiWlQnf0wTam1bDRE3B0pOhEFOEgPhrL2SqmzL4c2Gw2B6TW0BP1unWsJx32jQceNTq7Y4y7rvWc4hxR8QVZoOsQ5bhCsa3NuJ9zWIsMq/wBYpeOyPWK7HRayJ7suWcZZqA34aElvZ0Dbkjv665FPYwC5cMsvluwQbqfyUeVa/x5+CrBQezVvhuGI7362D7pduGQiAb8h8mTx4JX0mT7qZ09AhWoB8zF854+VfjNvWwCD+KlPtzsgVNRrkvD7yTgDJkyLBdNNgXw1Y58zH99VsLuy675g9d5bEAa8irdIuZiJ04wpnLd3kgUeN3N82BWkuDFPmhtJUvvWS0YQpoumnDollmSOf0JGmHgP+CQ1V4xZMGr/3XcJlKDp6EAdOT+FbkeT48naZqSF/5Bng5MC0LZrPXoWOvCTQ+sVVd0B2KwZEN4XCfaefFsYU/87IwF+D8Rhj50caIefiZq2Aa1/meAIJU45mCGF9wYqVCsDzWeCRQOm2r6LbSQj/eVNMOtRG+0C0kKhm0iHbtWTHl2r43Ik4DPKEnTj+M55V1do4mizkdQGpzxg4bljY9PRcZzUFTvcvAMYHy5krCDq3HzvjIfjch+oEBm1+WA46mktb5JdbMY9jKD7ugmFYj4Nk1VZxO1i49EoQYkwAbes2O2nJLgjUUBz1L/3lK/H7P1d23qiOJG9yNkZGEESxR3N2IdjoaRJgoZo04QLiD5DvNtw0btr2AD31Rn6fH7AiGzB2zHjPH7jNWOWo30HjkCxP/QmlxD1igcjAHFMhOUIgilp55Og61OEptrWhWqD/wNukC5P8Vt/VC1ClYi794pFBy1FWeJ3t1OMQrFiZ35muMEii18xBBJQsKlcl25O3c2Pt7uOq/7r9Sx+wqCk2ka8c5zBjlJlI752RzSkG3Y+NCjuXIMXISDvXuyQLcuX9F+qYSfaYDATwix8yARBbIebwF85TMSMyDdi4jGEhdGZ1YSn/+2kl2J/wOH9AIDZ2aVxQAAAABJRU5ErkJggg==);
             }
@@ -67,7 +68,8 @@
                 flex-direction: row;
                 justify-content: space-evenly;
                 padding-left: 1em;
-                height: 100vh;
+                padding-bottom: 3em;
+                min-height: 100vh;
             }
             &-title{
 
@@ -269,7 +271,8 @@
           animation-iteration-count: infinite;
           position: absolute;
           bottom: 20px;
-          left: 50%;
+          left: 45%;
+          z-index: 1000;
       }
       .hoverArrow--top--container{
           z-index: 1000;
@@ -279,7 +282,7 @@
         animation-iteration-count: infinite;
         position: fixed;
         bottom: 5px;
-        right: 100px;
+        right: 2.5em;
       }
       .down{
          
@@ -365,6 +368,9 @@
             width: 30vw;
             transform: translateX(-300px);
         }
+        .homepage--main--pres-container1{
+            padding-bottom: none;
+        }
         .homepage--main--header-container-desc{
             width: 30vw;
             transform: translateX(300px);
@@ -381,6 +387,7 @@
         .homepage--main--pres-container{
             justify-content: space-evenly;
             align-items: center;
+            padding-bottom: none;
         }
 
         .homepage--main--cards{

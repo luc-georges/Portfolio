@@ -16,10 +16,17 @@ const Homepage = ({repos}) =>{
   const { heightW, widthW } = useWindowDimensions();
   let numberOfParticles;
   let widthLogo
-  if(widthW < 768){
+  if(widthW < 720){
     numberOfParticles = 8
+    widthLogo = "mini"
+  }
+  else if(widthW > 720 && widthW < 1560){
+    numberOfParticles = 18
     widthLogo = "tiny"
-  }else{
+  }
+  
+
+  else{
     numberOfParticles= 25
     widthLogo = "small"
   }

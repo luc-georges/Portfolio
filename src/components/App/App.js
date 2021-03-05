@@ -3,9 +3,7 @@ import { Route , Switch } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Homepage from '../Homepage/Homepage'
-import Contact from '../Contact/Contact'
-import CV from '../CV/CV'
-import Portfolio from '../Portfolio/Portfolio'
+
 import NotFound from '../NotFound/NotFound'
 import 'semantic-ui-css/semantic.min.css'
 import './styles.scss'
@@ -34,19 +32,9 @@ const App = () => {
 
 return (
     <div className="app">
-
     <Switch>
     <Route exact path="/">
     <Homepage repos={repos}/>
-    </Route>
-    <Route path="/Portfolio">
-    <Portfolio/>
-    </Route>
-    <Route path="/Contact">
-    <Contact/>
-    </Route>
-    <Route path="/CV">
-    <CV/>
     </Route>
     <Route>
         <NotFound />
