@@ -6,7 +6,7 @@ import TextLoop from "react-text-loop";
 import useWindowDimensions from '../../hook/WindowsSize'
 import { HashLink as Link } from 'react-router-hash-link';
 import pdf from './Luc-Georges-CV.pdf'
-import { Link as Links, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link as Links, Element, } from 'react-scroll'
 
 
 
