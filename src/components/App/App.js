@@ -2,7 +2,7 @@ import React,{ useState, useEffect, lazy, Suspense } from 'react'
 import { Route , Switch } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import 'semantic-ui-css/semantic.min.css'
+
 import './styles.scss'
 import axios from 'axios'
 

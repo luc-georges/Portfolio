@@ -7,7 +7,7 @@ import useWindowDimensions from '../../hook/WindowsSize'
 import { HashLink as Link } from 'react-router-hash-link';
 import pdf from './Luc-Georges-CV.pdf'
 import { Link as Links, Element, } from 'react-scroll'
-
+import 'semantic-ui-css/semantic.min.css'
 
 
 const Homepage = ({ repos }) => {
