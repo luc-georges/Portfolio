@@ -6,7 +6,11 @@ module.exports = {
       ...theme('colors'),
       'primary': '#27294d',
 
-     }),
+     }),maxWidth:{
+      '1/4':'25%',
+      '1/2':'50%',
+      '3/4':'75%'
+     },
      boxShadow: {
       sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
       DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
