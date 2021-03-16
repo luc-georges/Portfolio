@@ -130,7 +130,7 @@ const Homepage = ({ repos }) => {
 
         {/*********************  Git section ****************/}
 
-        <div className="homepage--main--git relative flex min-h-screen lg:flex-row flex-col py-20" id="Git">
+        <div className="relative flex min-h-screen lg:flex-row flex-col py-20" id="Git">
           <div className="absolute bg-no-repeat bg-cover bg-center h-full w-full z-0 left-0 top-0" style={{ backgroundImage: 'url("wall.jpeg")' }}></div>
 
           <div data-aos="zoom-in-right" className="homepage--main--title--container-git">
@@ -139,7 +139,7 @@ const Homepage = ({ repos }) => {
           <Card.Group centered data-aos="zoom-in-left" className="lg:max-w-1/2">
             {repos.map((element, index) => {
               return (
-                <Card className="homepage--main--card opacity-90 " key={index} href={element.html_url} target="_blank">
+                <Card className="opacity-90 " key={index} href={element.html_url} target="_blank">
                   <Card.Content  >
                     <Card.Header >{element.name}</Card.Header>
                     {element.name == "MateHub-project" ? <Image src="https://repository-images.githubusercontent.com/337679400/43b2f480-6b96-11eb-8413-d44cc207c7b4" /> : ""}
@@ -249,7 +249,7 @@ const Homepage = ({ repos }) => {
 
         </div>
         <div className="min-h-screen -pt-4 flex flex-col lg:flex-row justify-around content-center  relative bg-no-repeat bg-cover bg-center " style={{ backgroundImage: 'url("school.jpg")' }} id="Formation">
-          <div data-aos="zoom-out" className="max-w-1/2 self-center bg-opacity-50 p-4 shadow-xl bg-gray-300 sm:rounded-3xl">
+          <div data-aos="zoom-out" className="lg:max-w-1/2 self-center bg-opacity-50 p-4 shadow-xl bg-gray-300 sm:rounded-3xl">
             <span className="text-2xl block pb-8 font-bold">Formation</span>
 
 
