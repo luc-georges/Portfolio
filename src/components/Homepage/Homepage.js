@@ -4,7 +4,7 @@ import { Card, Image} from 'semantic-ui-react'
 import useWindowDimensions from '../../hook/WindowsSize'
 
 import pdf from './Luc-Georges-CV.pdf'
-import { Link as Links, Element, } from 'react-scroll'
+import { Element} from 'react-scroll'
 import 'semantic-ui-css/semantic.min.css'
 import Navbar from '../Navbar/Navbar'
 
@@ -12,7 +12,7 @@ const Homepage = ({ repos, Open, setOpen }) => {
   //Hook state for mobile opening / close menu
 
   //Get viewport size
-  const { heightW, widthW } = useWindowDimensions();
+  const { widthW } = useWindowDimensions();
   //Particles for particlesJS
   let numberOfParticles;
   //Size for Logos
