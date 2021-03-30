@@ -8,7 +8,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import pdf from './Luc-Georges-CV.pdf'
 import { Link as Links, Element, } from 'react-scroll'
 import 'semantic-ui-css/semantic.min.css'
-
+import Navbar from '../Navbar/Navbar'
 
 const Homepage = ({ repos }) => {
   //Hook state for mobile opening / close menu
@@ -38,53 +38,8 @@ const Homepage = ({ repos }) => {
   return (
 
     <div className="relative " >
-
-      <nav className="shadow-lg shadow-inner fixed w-full bg-primary z-50 opacity-100" >
-        <div className="w-full mx-auto px-2 sm:px-6 lg:px-8">
-          <div className="relative flex items-center justify-between h-12">
-            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              <button onClick={() => { setOpen(!Open) }} className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
-                <span className="sr-only">Open main menu</span>
-                <svg className={Open ? 'hidden  h-6 w-6' : 'block  h-6 w-6'} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-                <svg className={Open ? 'block  h-6 w-6' : 'hidden  h-6 w-6'} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="flex-shrink-0 flex items-center">
-                <img className="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow" />
-                <span className="text-gray-100">Mon Portfolio</span>
-                {/* Mobile NavBar */}
-              </div>
-              <div className="hidden sm:block sm:ml-6">
-                <div className="flex space-x-4">
-                  <Links to="top" activeClass="bg-purple-700" spy={true} smooth={false} className="cursor-pointer hover:bg-gray-700 hover:text-white text-white px-3 py-2 rounded-md text-sm font-medium">Accueil</Links>
-                  <Links to="Git" activeClass="bg-purple-700" spy={true} smooth={false} className="cursor-pointer hover:bg-gray-700 hover:text-white text-white px-3 py-2 rounded-md text-sm font-medium">GitHub</Links>
-                  <Links to="Skill" activeClass="bg-purple-700" spy={true} smooth={false} className="cursor-pointer hover:bg-gray-700 hover:text-white text-white px-3 py-2 rounded-md text-sm font-medium">Compétences</Links>
-                  <Links to="Formation" activeClass="bg-purple-700" spy={true} smooth={false} className="cursor-pointer hover:bg-gray-700 hover:text-white text-white px-3 py-2 rounded-md text-sm font-medium">Formation</Links>
-                  <Links to="Contact" activeClass="bg-purple-700" spy={true} smooth={false} className="cursor-pointer hover:bg-gray-700 hover:text-white text-white px-3 py-2 rounded-md text-sm font-medium">Contact</Links>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={Open ? "block" : "hidden sm:hidden"}>
-          <div className="px-2 pt-2 pb-3 space-y-1">
-
-            {/* Desktop NavBar */}
-
-            <Links to="top" activeClass="bg-purple-700" spy={true} smooth={false} className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Accueil</Links>
-            <Links to="Git" activeClass="bg-purple-700" spy={true} smooth={false} className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Repos GitHub</Links>
-            <Links to="Skill" activeClass="bg-purple-700" spy={true} smooth={false} className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Compétences</Links>
-            <Links to="Formation" activeClass="bg-purple-700" spy={true} smooth={false} className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Formation</Links>
-            <Links to="Contact" activeClass="bg-purple-700" spy={true} smooth={false} className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</Links>
-          </div>
-        </div>
-      </nav>
-
+      <Navbar Open={Open} setOpen ={setOpen} />
+     
       <div className=""   >
 
         <Element className="bg-cover bg-center  z-0 left-0 top-0" style={{ backgroundImage: 'url("header.jpeg")' }} id="top" name="pres">
@@ -96,14 +51,15 @@ const Homepage = ({ repos }) => {
             <div data-aos="fade-right" id="profile" className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-100 z-10 mx-6 lg:mx-0">
               <div className="p-4  text-center lg:text-left">
                 {/* Image for mobile view*/}
-                <div className="block z-1 lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style={{ backgroundImage: 'url("photo.png")' }} />
-                <h1 className="text-3xl font-bold pt-8 lg:pt-0">Luc Georges</h1>
+                <div className="block z-1 lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style={{ backgroundImage: 'url("me.jpg")' }} />
+                <h1 className="text-3xl text-center font-bold pt-8 lg:pt-0">Luc Georges</h1>
                 <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25" />
                 <p className="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><svg className="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" /></svg>Développeur web Javascript Full-stack</p>
                 <p className="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start"><svg className="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z" /></svg> Thonon-les-bains - France</p>
-                <p className="pt-8 text-md">Je m'appelle Luc et je suis développeur web Après plusieurs années passées dans l'hotellerie à travailler dans divers pays, j'ai décidé de me reconvertir dans un domaine qui me passione depuis toujours, le développement web. Etant passioné de code j'ai réalisé au cours de ma vie des projets de petite envergure pour des associations ainsi que des projets perso
-                J'ai donc rejoint l'école O'clock pour réaliser une formation de 6 mois au Javascript ce qui m'a permis de consolider mes connaissances ainsi que d'apprendre tout aussi bien le côté front-end que back-end et de réaliser un projet d'un mois en équipe
-                                        Je suis aussi passionné de jeux vidéo ainsi que de musique (particulièrement rock et métal).</p>
+                <p className="pt-2 text-md">Bonjour! je m'appelle Luc et je suis actuellement en reconversion pour travailler dans le  développement web. </p>
+                <p className="pt-2 text-md">Lorsque j'avais 14 ans j'ai réalisé des projets de petit envergure en HTML, PHP, Flash tel que le site internet d'une association d'airsoft dont je faisais partie ainsi que des pages web en HTML et PHP lié à une base de données servant à la création de compte pour accéder à un serveur de jeu que j'hébergeais. De là est née ma passion pour le développement web. Le destin a fait que je me suis orienté vers l'hôtellerie restauration, aimant aussi voyager j'ai pendant un peu plus de 10 ans travaillé dans divers pays tel que le Royaume-uni, l'Ecosse, l'Australie.</p>
+                <p className="pt-2 text-md">Aujourd'hui de retour France, j'aimerais vraiment pouvoir travailler dans un domaine qui se rapproche plus d'une passion que d'un gagne pain.</p>
+                <p className="pt-2 text-md">J'ai donc rejoint l'école O'clock pour réaliser une formation de 6 mois au Javascript ce qui m'a permis de consolider mes connaissances ainsi que d'apprendre tout aussi bien le côté front-end que back-end et de réaliser un projet d'un mois en équipe.</p>                                   
                 <div className="pt-12 pb-8">
                   <div className="bg-primary  text-white font-bold py-2 px-4 text-center rounded-full">
                     Get In Touch
@@ -121,7 +77,7 @@ const Homepage = ({ repos }) => {
             {/*Img Col*/}
             <div data-aos="fade-left" className="w-full z-10 lg:w-2/5"  >
               {/* Big profile image for side bar (desktop) */}
-              <img src="moi.jpg" className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" />
+              <img src="me.jpg" className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" />
 
             </div>
 
@@ -172,20 +128,20 @@ const Homepage = ({ repos }) => {
                       <div className="mt-8 text-2xl  text-gray-200"> Mes compétences </div>
                       <div className="  mt-6 text-gray-400">
                         <Image.Group size={widthLogo}>
-                          <Image src='/logos/logo_HTML5.svg' />
-                          <Image src='/logos/logo_CSS3.svg' />
-                          <Image src='/logos/logo_bootstrap.svg' />
-                          <Image src='/logos/logo_composer_source.svg' />
-                          <Image src='/logos/logo_JavaScript.svg' />
-                          <Image src='/logos/logo_Postgresql.svg' />
-                          <Image src='/logos/logo_npm.svg' />
-                          <Image src='/logos/logo_React.svg' />
-                          <Image src='/logos/logo_sass.svg' />
-                          <Image src='/logos/logo_Git.svg' />
-                          <Image src='/logos/logo_redux.svg' />
-                          <Image src='/logos/Node.js_logo.svg' />
-                          <Image src='/logos/expressjs-ar21.svg' />
-                          <Image src='/logos/sequelize-logo-9A5075DB9F-seeklogo.com.png' />
+                          <Image alt='logo HTML5' src='/logos/logo_HTML5.svg' />
+                          <Image alt='logo css3' src='/logos/logo_CSS3.svg' />
+                          <Image alt='logo bootstrap' src='/logos/logo_bootstrap.svg' />
+                          <Image alt='logo composer' src='/logos/logo_composer_source.svg' />
+                          <Image alt='logo Javascript' src='/logos/logo_JavaScript.svg' />
+                          <Image alt='logo PostgreSQL' src='/logos/logo_Postgresql.svg' />
+                          <Image alt='logo npm' src='/logos/logo_npm.svg' />
+                          <Image alt='logo react' src='/logos/logo_React.svg' />
+                          <Image alt='logo sass' src='/logos/logo_sass.svg' />
+                          <Image alt='logo git' src='/logos/logo_Git.svg' />
+                          <Image alt='logo redux' src='/logos/logo_redux.svg' />
+                          <Image alt='logo node.js' src='/logos/Node.js_logo.svg' />
+                          <Image alt='logo express' src='/logos/expressjs-ar21.svg' />
+                          <Image alt='logo sequelize' src='/logos/sequelize-logo-9A5075DB9F-seeklogo.com.png' />
                         </Image.Group></div>
                     </div>
                     <div className="grid grid-cols-1 bg-opacity-50  bg-gray-800 md:grid-cols-2">
