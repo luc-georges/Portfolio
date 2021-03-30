@@ -28,17 +28,18 @@ const App = () => {
    fetchRepos();
    AOS.init()
 }, []);
- 
+const [Open, setOpen] = useState(false);
+
 
 return (
   <Suspense fallback={<div>Loading... </div>}>
       <div className="app">
     <Switch>
     <Route exact path="/">
-    <Homepage repos={repos}/>
+    <Homepage Open={Open} setOpen={setOpen} repos={repos}/>
     </Route>
     <Route>
-        <NotFound />
+        <NotFound Open={Open} setOpen={setOpen}/>
     </Route>
     </Switch>
 

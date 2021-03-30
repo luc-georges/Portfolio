@@ -1,5 +1,6 @@
-import { Link as Links, Element, } from 'react-scroll';
-import React, { useState } from 'react';
+import { Link as Links } from 'react-scroll';
+import React from 'react';
+
 const Navbar = ({Open, setOpen})=>{
 
 return (
@@ -25,7 +26,7 @@ return (
       </div>
       <div className="hidden sm:block sm:ml-6">
         <div className="flex space-x-4">
-          <Links to="top" activeClass="bg-purple-700" spy={true} smooth={false} className="cursor-pointer hover:bg-gray-700 hover:text-white text-white px-3 py-2 rounded-md text-sm font-medium">Accueil</Links>
+          <Links to="top"  activeClass="bg-purple-700" spy={true} smooth={false} className="cursor-pointer hover:bg-gray-700 hover:text-white text-white px-3 py-2 rounded-md text-sm font-medium">Accueil</Links>
           <Links to="Git" activeClass="bg-purple-700" spy={true} smooth={false} className="cursor-pointer hover:bg-gray-700 hover:text-white text-white px-3 py-2 rounded-md text-sm font-medium">GitHub</Links>
           <Links to="Skill" activeClass="bg-purple-700" spy={true} smooth={false} className="cursor-pointer hover:bg-gray-700 hover:text-white text-white px-3 py-2 rounded-md text-sm font-medium">Compétences</Links>
           <Links to="Formation" activeClass="bg-purple-700" spy={true} smooth={false} className="cursor-pointer hover:bg-gray-700 hover:text-white text-white px-3 py-2 rounded-md text-sm font-medium">Formation</Links>
@@ -40,7 +41,7 @@ return (
 
     {/* Desktop NavBar */}
 
-    <Links to="top" activeClass="bg-purple-700" spy={true} smooth={false} className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Accueil</Links>
+  <Links to="top"  activeClass="bg-purple-700" spy={true} smooth={false} className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Accueil</Links>
     <Links to="Git" activeClass="bg-purple-700" spy={true} smooth={false} className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Repos GitHub</Links>
     <Links to="Skill" activeClass="bg-purple-700" spy={true} smooth={false} className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Compétences</Links>
     <Links to="Formation" activeClass="bg-purple-700" spy={true} smooth={false} className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Formation</Links>
