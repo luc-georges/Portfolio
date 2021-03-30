@@ -1,8 +1,6 @@
 import React from 'react'
 import { Card, Image} from 'semantic-ui-react'
-
 import useWindowDimensions from '../../hook/WindowsSize'
-
 import pdf from './Luc-Georges-CV.pdf'
 import { Element} from 'react-scroll'
 import 'semantic-ui-css/semantic.min.css'
