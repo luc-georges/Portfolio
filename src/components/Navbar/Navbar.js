@@ -4,17 +4,17 @@ import React from 'react';
 const Navbar = ({Open, setOpen})=>{
 
 return (
-<nav className="shadow-lg shadow-inner fixed w-full bg-primary z-50 opacity-100" >
+<nav className="shadow-lg shadow-inner fixed w-screen bg-primary z-50 opacity-100" >
 <div className="w-full mx-auto px-2 sm:px-6 lg:px-8">
   <div className="relative flex items-center justify-between h-12">
     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
       <button onClick={() => { setOpen(!Open) }} className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
         <span className="sr-only">Open main menu</span>
         <svg className={Open ? 'hidden  h-6 w-6' : 'block  h-6 w-6'} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
         <svg className={Open ? 'block  h-6 w-6' : 'hidden  h-6 w-6'} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
     </div>
