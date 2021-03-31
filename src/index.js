@@ -4,6 +4,12 @@ import {BrowserRouter as Router} from "react-router-dom"
 import './index.scss';
 import App from './components/App/App';
 import * as serviceWorker from './serviceWorker';
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+  gtmId: 'G-6TX363CCT2'
+}
+TagManager.initialize(tagManagerArgs)
 
 ReactDOM.render(
   //<React.StrictMode>
