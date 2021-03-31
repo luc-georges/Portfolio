@@ -32,7 +32,7 @@ const Homepage = ({ repos, Open, setOpen }) => {
   }
   return (
 
-    <div className="relative " >
+    <div className="relative h-full overflow-x-hidden " >
       <Navbar Open={Open} setOpen ={setOpen} />
      
       <div className=""   >
@@ -82,8 +82,8 @@ const Homepage = ({ repos, Open, setOpen }) => {
 
         {/*********************  Git section ****************/}
 
-        <div className="relative flex min-h-screen lg:flex-row flex-col py-20" id="Git">
-          <div className="absolute bg-no-repeat bg-cover bg-center h-full w-full z-0 left-0 top-0" style={{ backgroundImage: 'url("wall.jpeg")' }}></div>
+        <div className="relative flex min-h-screen lg:flex-row flex-col max-w-screen py-20" id="Git">
+          <div className="absolute bg-no-repeat bg-cover bg-center h-full w-screen z-0 left-0 top-0" style={{ backgroundImage: 'url("wall.jpeg")' }}></div>
 
           <div data-aos="zoom-in-right" className="homepage--main--title--container-git">
             <Image src='gitHub.png' />
